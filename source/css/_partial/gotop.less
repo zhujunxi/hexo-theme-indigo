@@ -1,7 +1,7 @@
 #gotop {
     position: fixed;
     right: 16px;
-    bottom: 30px;
+    bottom: 40px;
     z-index: 30;
     width: 56px;
     height: 56px;
@@ -9,11 +9,15 @@
     text-align: center;
     color: #fff;
     background: @accentColor;
-    border-radius: 50%;
+    border-radius: 10%;
     opacity: 0;
     .boxShadow();
     .transform(translateX(200%));
-
+    .icon {
+        font-size: 1em;
+        vertical-align:0;
+    }
+        
     &.in {
         opacity: 1;
         .transform(none);
@@ -23,9 +27,9 @@
 
 @media screen and (max-width:760px) {
     #gotop {
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
     }
 
 }
