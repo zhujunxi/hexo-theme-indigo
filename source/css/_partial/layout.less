@@ -44,7 +44,8 @@
 
     .brand {
         padding: 40px @menuPadding 2em;
-        background: fade(@primaryColor, 50%);
+        //background: fade(@primaryColor, 50%);
+        background: fade(@darkPrimaryColor, 80%);
     }
 
     .avatar {
@@ -202,7 +203,10 @@
 a[title="站长统计"] {
     display: none;
 }
-
+.content-header {
+    background-image:url(/img/back-long.jpg);
+    background-size: 100% auto;
+}
 @media screen and (max-width:1240px) {
     #menu-off {
         display: none;
@@ -221,6 +225,10 @@ a[title="站长统计"] {
     #main {
         padding-left: 0;
     }
+    .content-header {
+        background-image:url(/img/back-long.jpg);
+        background-size: 100% auto;
+    }
 }
 
 
@@ -228,6 +236,10 @@ a[title="站长统计"] {
     .container {
         width: 100%;
         padding: 20px 16px;
+    }
+    .content-header {
+        background-image:url(/img/back-long.jpg);
+        background-size: 100% auto;
     }
 }
 
@@ -252,7 +264,10 @@ a[title="站长统计"] {
             }
         }
     }
-
+    .content-header {
+        background-image:url(/img/back.png);
+        background-size: 100% 100%;
+    }
     ::-webkit-scrollbar {
         display: none;
     }
